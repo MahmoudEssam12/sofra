@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="imgs/burger-icon.png">
+
+    <!--=================== style files =================-->
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>سفرة | الرئيسية</title>
+</head>
+<body>
+
+    <!--=============== Navigation Bar =================-->
+    <div class="pos-f-t nav-holder">
+        <nav class="navbar navbar-light nav-color">
+          <button class="navbar-toggler hamburger-button" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+          </button>
+          <div class="d-flex justify-content-between the-other-half">
+            <img src="imgs/sofra logo-1.png" alt="sofra">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 nav-search-bar" type="search" aria-label="Search">
+                <span class="magnifier"><i class="fas fa-search"></i></span>
+            </form>
+            <button class="custom-dropmenu">
+                <span class="avatar-icon"><i class="fas fa-user-circle"></i></span>
+            </button>
+            <img src="imgs/triangle-dropdown.png" class="dropdown-triangle" alt="">
+            <div id="myDropdownMenu" class="dropdown-content">
+                <a href="orders.html" class="dropbtn-links"> <i class="fas fa-clipboard-list"></i>طلباتي </a>
+                <a href="offers-1.html" class="dropbtn-links"> <i class="fas fa-gifts"></i>العروض </a>
+                <a href="contact-us.html" class="dropbtn-links"> <i class="fas fa-envelope-square"></i> تواصل معنا </a>
+                <a href="login.html" class="dropbtn-links"> <i class="far fa-user"></i>حسابي</a>
+                <a href="#" class="dropbtn-links"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a>
+            </div>
+            <a href="cart-full.html" class="my-cart-page">
+                <span class="carts-icon"><i class="fas fa-shopping-cart"></i></span>
+            </a>
+         </div>
+        </nav>
+        <div class="collapse nav-menu" id="navbarToggleExternalContent">
+            <div class="nav-color-bg p-4">
+                <a href="index.html" class="page-link"><i class="fas fa-home"></i>الرئيسية</a>
+                <a href="the-menu.html" class="page-link"><i class="fas fa-utensils"></i>طلبات الطعام</a>
+                <a href="resturant-page.html" class="page-link"><i class="fas fa-cookie-bite"></i>انواع الطعام</a>
+            </div>
+          </div>
+      </div>
+    <!--=============== Navigation Bar =================-->
+
+    <!--================= header  ====================-->
+    <section class="regester-now" style="background:url(imgs/header.png)">
+        <div class="regester-now-content">
+            <h1>سُفرة<span>></span></h1>
+            <h3>بتشتري.. بتبيع؟ كلة عند أم ربيع</h3>
+            <a href="#" class="btn regester-now-btn"><img src="imgs/dish.png" alt="dishes">سجل الأن</a>
+        </div>
+    </section>
+    <!--================= header ====================-->
+
+    <!--=============== your fav restaurant =================-->
+    <section class="your-fav-restaurant" style="background: url(imgs/grey-ground.gif);">
+        <div class="container-fluid">
+            <div class="searching-form">
+                <h3>ابحث عن مطعمك المفضل</h3>
+                <form action="#" class="searching-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input class="form-control mr-sm-2 nav-search-bar fav-rest" type="search" aria-label="Search" placeholder="ابحث عن مطعمك المفضل">
+                            <span class="find-your-restaurant"><i class="fas fa-search"></i></span>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="wide" name="city-select" id="citySelect">
+                                <option value="0" selected>اختر المدينه</option>
+                                <option value="1">القاهرة</option>
+                                <option value="2">المنصورة</option>
+                                <option value="3">الإسكندرية</option>
+                                <option value="4">ميت غمر</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="available-restaurants">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="imgs/res-img.png" class="card-img" alt="كنتاكي">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">دجاج كنتاكي</h5>
+                                        <div id="rateYo" class="card-rating"></div>
+                                        <p class="card-text"><small>الحد الأدنى للطلب : 60 جنيه</small></p>
+                                        <p class="card-text"><small>رسوم التوصيل : 20 جنية</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="available-now">
+                                        <span class="status"><i class="fas fa-circle"></i>مفتوح</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="imgs/res-img.png" class="card-img" alt="كنتاكي">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">دجاج كنتاكي</h5>
+                                        <div id="rateYo1" class="card-rating"></div>
+                                        <p class="card-text"><small>الحد الأدنى للطلب : 60 جنيه</small></p>
+                                        <p class="card-text"><small>رسوم التوصيل : 20 جنية</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="available-now">
+                                        <span class="status"><i class="fas fa-circle"></i>مفتوح</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="imgs/res-img.png" class="card-img" alt="كنتاكي">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">دجاج كنتاكي</h5>
+                                        <div id="rateYo2" class="card-rating"></div>
+                                        <p class="card-text"><small>الحد الأدنى للطلب : 60 جنيه</small></p>
+                                        <p class="card-text"><small>رسوم التوصيل : 20 جنية</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="available-now">
+                                        <span class="status"><i class="fas fa-circle"></i>مفتوح</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="imgs/res-img.png" class="card-img" alt="كنتاكي">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">دجاج كنتاكي</h5>
+                                        <div id="rateYo3" class="card-rating"></div>
+                                        <p class="card-text"><small>الحد الأدنى للطلب : 60 جنيه</small></p>
+                                        <p class="card-text"><small>رسوم التوصيل : 20 جنية</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="available-now">
+                                        <span class="status"><i class="fas fa-circle"></i>مفتوح</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="imgs/res-img.png" class="card-img" alt="كنتاكي">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">دجاج كنتاكي</h5>
+                                        <div id="rateYo4" class="card-rating"></div>
+                                        <p class="card-text"><small>الحد الأدنى للطلب : 60 جنيه</small></p>
+                                        <p class="card-text"><small>رسوم التوصيل : 20 جنية</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="available-now">
+                                        <span class="status"><i class="fas fa-circle"></i>مفتوح</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="imgs/res-img.png" class="card-img" alt="كنتاكي">
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="card-body">
+                                        <h5 class="card-title">دجاج كنتاكي</h5>
+                                        <div id="rateYo5" class="card-rating"></div>
+                                        <p class="card-text"><small>الحد الأدنى للطلب : 60 جنيه</small></p>
+                                        <p class="card-text"><small>رسوم التوصيل : 20 جنية</small></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="available-now">
+                                        <span class="status"><i class="fas fa-circle"></i>مفتوح</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=============== your fav restaurant =================-->
+
+    <!--================== offers section ====================-->
+    <section class="offers-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="our-offers-wrapper">
+                        <div class="offers-bg" style="background-image: url(imgs/offers-bg.jpg);">
+                            <p>نقدم في سفرة كل انواع المطاعم و الأكلات  الشهية ... ماذا تنتظر ابدأ الاستمتاع بالعروض الان</p>
+                            <a href="#" class="find-offers">شاهد العروض</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="knees">
+                        <img src="imgs/Group 1036.png" alt="our offers">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================== offers section ====================-->
+
+    <!--================== download our app -===================-->
+    <section class="download-app" style="background-image: url(imgs/our-app.png);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="our-app-screen">
+                        <img src="imgs/app mockup.png" alt="app screenshot">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="our-app-link">
+                        <p>قم بتحميل التطبيق الخاص بنا الأن</p>
+                        <a href="https://play.google.com/store?hl=en" target="_blank" style="background-image: url(imgs/download-button.png);"><i class="fab fa-google-play"></i>حمل الان </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================== download our app -===================-->
+
+    <!--================= footer ====================-->
+    <footer class="footer" style="background: url(imgs/footer-bg.png);">
+        <div class="container-fluid">
+            <div class="footer-wrapper">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="footer-logo">
+                            <img src="imgs/sofra logo-1.png" alt="footer sofra logo">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="who-are-we-footer">
+                            <p class="who"><span>من نحن</span><img src="imgs/edit.png" alt=""></p>
+                            <p class="about-us">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                            <div class="social-media-footer">
+                                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================= footer ====================-->
+
+    <!--================= script files ===================-->
+    
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/jquery.rateyo.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $('documnent').ready(function(){
+        $('#citySelect').niceSelect();
+
+        $('#rateYo').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041",
+            
+        });
+        $('#rateYo1').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041"
+        })
+
+        $('#rateYo2').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041"
+        })
+
+        $('#rateYo3').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041"
+        })
+
+        $('#rateYo4').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041"
+        })
+
+        $('#rateYo5').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041"
+        })
+
+    });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="imgs/burger-icon.png">
+
+    <!--=================== style files =================-->
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/jquery.rateyo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>سفرة | الوجبة </title>
+</head>
+<body>
+
+    <!--=============== Navigation Bar =================-->
+    <div class="pos-f-t nav-holder">
+        <nav class="navbar navbar-light nav-color">
+          <button class="navbar-toggler hamburger-button" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon"><span></span><span></span><span></span><span></span></div>
+          </button>
+          <div class="d-flex justify-content-between the-other-half">
+            <img src="imgs/sofra logo-1.png" alt="sofra">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 nav-search-bar" type="search" aria-label="Search">
+                <span class="magnifier"><i class="fas fa-search"></i></span>
+            </form>
+            <button class="custom-dropmenu">
+                <span class="avatar-icon"><i class="fas fa-user-circle"></i></span>
+            </button>
+            <img src="imgs/triangle-dropdown.png" class="dropdown-triangle" alt="">
+            <div id="myDropdownMenu" class="dropdown-content">
+                <a href="orders.html" class="dropbtn-links"> <i class="fas fa-clipboard-list"></i>طلباتي </a>
+                <a href="offers-1.html" class="dropbtn-links"> <i class="fas fa-gifts"></i>العروض </a>
+                <a href="contact-us.html" class="dropbtn-links"> <i class="fas fa-envelope-square"></i> تواصل معنا </a>
+                <a href="login.html" class="dropbtn-links"> <i class="far fa-user"></i>حسابي</a>
+                <a href="#" class="dropbtn-links"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a>
+            </div>
+            <a href="cart-full.html" class="my-cart-page">
+                <span class="carts-icon"><i class="fas fa-shopping-cart"></i></span>
+            </a>
+         </div>
+        </nav>
+        <div class="collapse nav-menu" id="navbarToggleExternalContent">
+            <div class="nav-color-bg p-4">
+                <a href="index.html" class="page-link"><i class="fas fa-home"></i>الرئيسية</a>
+                <a href="the-menu.html" class="page-link"><i class="fas fa-utensils"></i>طلبات الطعام</a>
+                <a href="resturant-page.html" class="page-link"><i class="fas fa-cookie-bite"></i>انواع الطعام</a>
+            </div>
+          </div>
+      </div>
+    <!--=============== Navigation Bar =================-->
+
+<!--================== page content =====================-->
+<section class="meal-page-bg">
+    <div class="container-fluid">
+        <div class="main-meal-div">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="meal-info">
+                        <h3>بيف برجر 250 جرام</h3>
+                        <p class="meal-text">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                        </p>
+                        <p class="meal-text"><i class="far fa-clock"></i> 30 دقيقة تقريبا </p>
+                        <p class="meal-text"><i class="fas fa-wallet"></i> 55 ريال </p>
+                        <p class="meal-text"><i class="fas fa-coins"></i> 10 ريال </p>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="meal-img">
+                        <img src="imgs/burger.jpg" alt="burger">
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-to-cart">
+                <button type="button" class="btn add-to-cart-btn" data-toggle="modal" data-target=".bd-example-modal-lg" id="myModal">أضف الى العربة</button>
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modalDiv">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="popup-window-main">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span class="cancel-btn"><i class="far fa-times-circle"></i></span>
+                            </button>
+                            
+                            <h1>كيف تريد الإستمرار</h1>
+                            <div class="buttons-div">
+                                <button class="order-food">طلب طعام</button>
+                                <button class="sell-food">بيع طعام</button>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rest-info">
+                <h3><span><i class="fas fa-info"></i></span> معلومات عن المطعم</h3>
+
+            </div>
+            <div class="users-rating">
+                <div class="offers-header">
+                    <h1>تقييمات المستخدمين</h1>
+                </div>
+                <div class="rated-number">
+                    <span class="muted-text">155 تقييم</span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="user-card-rate">
+                            <div id="rateYo" class="card-rating"></div>
+                            <p class="from-who">بواسطة : محمامحروس</p>
+                            <p class="who-words">الأكل زي الفل هنا و سخن وبسمسم احلى شغل واحلى كلام</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="user-card-rate">
+                            <div id="rateYo1" class="card-rating"></div>
+                            <p class="from-who">بواسطة : محمامحروس</p>
+                            <p class="who-words">الأكل زي الفل هنا و سخن وبسمسم احلى شغل واحلى كلام</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="user-card-rate">
+                            <div id="rateYo2" class="card-rating"></div>
+                            <p class="from-who">بواسطة : محمامحروس</p>
+                            <p class="who-words">الأكل زي الفل هنا و سخن وبسمسم احلى شغل واحلى كلام</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="user-card-rate">
+                            <div id="rateYo3" class="card-rating"></div>
+                            <p class="from-who">بواسطة : محمامحروس</p>
+                            <p class="who-words">الأكل زي الفل هنا و سخن وبسمسم احلى شغل واحلى كلام</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="user-card-rate">
+                            <div id="rateYo4" class="card-rating"></div>
+                            <p class="from-who">بواسطة : محمامحروس</p>
+                            <p class="who-words">الأكل زي الفل هنا و سخن وبسمسم احلى شغل واحلى كلام</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="user-card-rate">
+                            <div id="rateYo5" class="card-rating"></div>
+                            <p class="from-who">بواسطة : محمامحروس</p>
+                            <p class="who-words">الأكل زي الفل هنا و سخن وبسمسم احلى شغل واحلى كلام</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers-header">
+                    <h1>أضف تقييمك</h1>
+                </div>
+                <div class="your-rating-pls">
+                    <div class="container">
+                        <form action="#" class="your-rating-form">
+                            <div id="rateYo6" class="card-rating"></div>
+                            <textarea name="your-rating" id="ratingArea" cols="30" rows="10" class="form-control product-description your-message your-rating-text" placeholder="أضف تقييمك.."></textarea>
+                            <input type="submit" class="sending-message" value="ارسال">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="offers-header">
+                    <h1> المزيد من أكلات هذا المطعم</h1>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="carousel-wrapper-div">
+        <div class="container">
+            <div class="row ">
+                <div class="owl-carousel owl-theme" id="otherMeals">
+                    <div class="item">
+                        <div class="other-meals">
+                            <img src="imgs/burger-card.jpg" alt="burger" id="carouselImg">
+                            <a href="#" class="details-click detail-words">
+                                <p>برجر</p>
+                                <span>اضغط للتفاصيل</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="other-meals">
+                            <img src="imgs/barbicio.jpg" alt="burger" id="carouselImg">
+                            <a href="#" class="details-click detail-words">
+                                <p>لحم مشوي</p>
+                                <span>اضغط للتفاصيل</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="other-meals">
+                            <img src="imgs/pasta.jpg" alt="burger" id="carouselImg">
+                            <a href="#" class="details-click detail-words">
+                                <p>باستا</p>
+                                <span>اضغط للتفاصيل</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="other-meals">
+                            <img src="imgs/burger-card.jpg" alt="burger" id="carouselImg">
+                            <a href="#" class="details-click detail-words">
+                                <p>برجر</p>
+                                <span>اضغط للتفاصيل</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="other-meals">
+                            <img src="imgs/barbicio.jpg" alt="burger" id="carouselImg">
+                            <a href="#" class="details-click detail-words">
+                                <p>لحم مشوي</p>
+                                <span>اضغط للتفاصيل</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="other-meals">
+                            <img src="imgs/pasta.jpg" alt="burger" id="carouselImg">
+                            <a href="#" class="details-click detail-words">
+                                <p>باستا</p>
+                                <span>اضغط للتفاصيل</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="other-meals">
+                            <img src="imgs/burger-card.jpg" alt="burger" id="carouselImg">
+                            <a href="#" class="details-click detail-words">
+                                <p>برجر</p>
+                                <span>اضغط للتفاصيل</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="other-meals">
+                            <img src="imgs/barbicio.jpg" alt="burger" id="carouselImg">
+                            <a href="#" class="details-click detail-words">
+                                <p>لحم مشوي</p>
+                                <span>اضغط للتفاصيل</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!--================== page content =====================-->
+    
+       
+    <!--================= footer ====================-->
+    <footer class="footer" style="background: url(imgs/footer-bg.png);">
+        <div class="container-fluid">
+            <div class="footer-wrapper">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="who-are-we-footer">
+                            <p class="who"><span>من نحن</span><img src="imgs/edit.png" alt=""></p>
+                            <p class="about-us">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                            <div class="social-media-footer">
+                                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-logo">
+                            <img src="imgs/sofra logo-1.png" alt="footer sofra logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--================= footer ====================-->
+
+    <!--================= script files ===================-->
+    
+    <script src="js/jQuery.js"></script>
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/jquery.rateyo.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    $('documnent').ready(function(){
+
+        $('#rateYo').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041",
+            rating:3
+        });
+        $('#rateYo1').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041",
+            rating:3
+        })
+
+        $('#rateYo2').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041",
+            rating:3
+        })
+
+        $('#rateYo3').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041",
+            rating:3
+        })
+
+        $('#rateYo4').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041",
+            rating:3
+        })
+
+        $('#rateYo5').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041",
+            rating:3
+        })
+
+        $('#rateYo6').rateYo({
+            ratedFill:' #ff4057',
+            rtl:true,
+            normalFill: "#240041",
+            rating:3
+        })
+
+
+
+    });
+
+
+    </script>
+</body>
+</html>
